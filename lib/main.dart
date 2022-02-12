@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 void main() => runApp(MyApp());
 
@@ -9,7 +10,24 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        body: Image.asset('illustration.png')
+        body: Center(
+          child: Column(
+            children: [
+              Text(
+                "Hallo, semuanya!", 
+                style: GoogleFonts.poppins(
+                  fontSize: 30,
+                ),
+              ),
+              Text(
+                "Hallo, semuanya!", 
+                style: TextStyle(
+                  fontSize: 30,
+                ),
+              ),
+            ],
+          ),
+        )
       ),
     );
   }
